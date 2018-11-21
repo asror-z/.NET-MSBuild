@@ -1,0 +1,32 @@
+﻿<Project>
+
+
+    <!--    AsrorZ.ZCore -->
+
+    <PropertyGroup>
+
+        <ZIcon>GUI\11</ZIcon>
+        
+        <ZId>$(MSBuildProjectName)</ZId>
+
+        <ZDescription>$(ZId)</ZDescription>
+        <ZVersion>7.0.7.0</ZVersion>
+
+        <ZCompany>AsrorZ Business Solutions LLC</ZCompany>
+        <ZCopyright>Copyright 2007-$([System.DateTime]::Now.ToString(`yyyy`)) © $(ZCompany). All rights reserved.
+        </ZCopyright>
+
+    </PropertyGroup>
+
+
+    <!-- Runtime    -->
+    <PropertyGroup>
+        <ZObjPath>$(MSBuildProjectDirectory)\AsrorZ\Obj</ZObjPath>
+        <ZBinPath>$(MSBuildProjectDirectory)\AsrorZ\Bin</ZBinPath>
+
+        <ZPreBuild><!--notepad.exe--></ZPreBuild>
+        <ZPostBuild><!--calc.exe--></ZPostBuild>
+    </PropertyGroup>
+
+
+</Project>

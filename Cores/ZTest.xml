@@ -1,0 +1,7 @@
+﻿<Project>
+    <Import Project="ZCore.xml" />
+
+    <PropertyGroup>
+        <ZIcon>MID\21</ZIcon>
+    </PropertyGroup>
+</Project>

@@ -1,0 +1,13 @@
+﻿<Project>
+    <Import Project="ZCore.xml" />
+
+    <PropertyGroup>
+
+        <ZIcon>WT\30</ZIcon>
+
+        <ZCompany>Microsoft Corporation</ZCompany>
+        <ZVersion>10.0.14393.0</ZVersion>
+
+        <ZCopyright>© Microsoft Corporation. All rights reserved.</ZCopyright>
+    </PropertyGroup>
+</Project>
