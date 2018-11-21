@@ -1,0 +1,20 @@
+﻿<Project>
+
+    <!--        Runtimes    -->
+
+
+
+    <!--        AutoItX3    -->
+
+    <ItemGroup>
+        <Reference Include="AutoItX3.Assembly, Version=3.0.0.0, Culture=neutral, PublicKeyToken=a646454c8d475470">
+            <HintPath>$(MSBuildZProject)\ZDLL\AutoIT\AutoItX3.Assembly.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="$(MSBuildZProject)\ZDLL\AutoIT\*.dll">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+</Project>
