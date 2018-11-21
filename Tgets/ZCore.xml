@@ -1,0 +1,48 @@
+﻿<Project>
+
+    <!--       Assembly      -->
+    <PropertyGroup>
+        <ApplicationIcon>$(MSBuildZProject)\Icons\$(ZIcon).ico</ApplicationIcon>
+        <AssemblyName>$(ZId)</AssemblyName>
+        <AssemblyTitle>$(ZDescription)</AssemblyTitle>
+        <AssemblyVersion>$(ZVersion)</AssemblyVersion>
+        <Company>$(ZCompany)</Company>
+        <Copyright>$(ZCopyright)</Copyright>
+        <Description>$(ZDescription)</Description>
+        <FileVersion>$(ZVersion)</FileVersion>
+        <Product>$(ZDescription)</Product>
+        <Version>$(ZVersion)</Version>
+    </PropertyGroup>
+
+
+    <!--    Nuget    -->
+
+    <PropertyGroup>
+        <Authors>$(ZCompany)</Authors>
+        <PackageId>$(ZId)</PackageId>
+        <PackageReleaseNotes>$(ZDescription)</PackageReleaseNotes>
+        <PackageTags>$(ZId)</PackageTags>
+        <PackageVersion>$(ZVersion)</PackageVersion>
+        <Title>$(ZDescription)</Title>
+    </PropertyGroup>
+
+
+    <!--    Compiler    -->
+    <PropertyGroup>
+        <BaseIntermediateOutputPath>$(ZObjPath)</BaseIntermediateOutputPath>
+        <BaseOutputPath>$(ZBinPath)</BaseOutputPath>
+    </PropertyGroup>
+
+
+    <!--        Eventors        -->
+    <PropertyGroup>
+        <PreBuildEvent>$(ZPreBuild)</PreBuildEvent>
+        <PostBuildEvent>$(ZPostBuild)</PostBuildEvent>
+    </PropertyGroup>
+
+
+    <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk"/>
+    <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk"/>
+
+
+</Project>
