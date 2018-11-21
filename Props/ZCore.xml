@@ -1,0 +1,67 @@
+﻿<Project>
+
+    <!--        Runtimes    -->
+    <PropertyGroup>
+        <BuildInParallel>True</BuildInParallel>
+        <Deterministic>True</Deterministic>
+        <LangVersion>7.2</LangVersion>
+        <OutputType>Exe</OutputType>
+        <Platform>x64</Platform>
+        <PlatformTarget>x64</PlatformTarget>
+        <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+    </PropertyGroup>
+
+    <!--        Common      -->
+    <PropertyGroup>
+        <BuildProjectReferences>True</BuildProjectReferences>
+        <ErrorReport>Prompt</ErrorReport>
+        <FileAlignment>4096</FileAlignment>
+        <Optimize>True</Optimize>
+        <OverwriteReadOnlyFiles>True</OverwriteReadOnlyFiles>
+        <Utf8Output>True</Utf8Output>
+    </PropertyGroup>
+
+
+    <!--       Assembly Core     -->
+    <PropertyGroup>
+        <NeutralLanguage>en-US</NeutralLanguage>
+        <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
+    </PropertyGroup>
+
+
+    <!--    Nuget Core   -->
+    <PropertyGroup>
+        <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+        <IncludeBuildOutput>True</IncludeBuildOutput>
+        <IncludeContentInPack>True</IncludeContentInPack>
+        <IncludeSource>False</IncludeSource>
+        <IsPackable>True</IsPackable>
+        <IsTool>False</IsTool>
+        <NoPackageAnalysis>True</NoPackageAnalysis>
+        <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    </PropertyGroup>
+
+    <!--    Debugger    -->
+    <Choose>
+        <When Condition=" '$(Configuration)' == 'Debug' ">
+            <PropertyGroup>
+                <DebugType>Full</DebugType>
+            </PropertyGroup>
+        </When>
+        <Otherwise>
+            <PropertyGroup>
+                <DebugType>None</DebugType>
+            </PropertyGroup>
+        </Otherwise>
+    </Choose>
+
+
+    <!--    Compiler Core   -->
+    <PropertyGroup>
+        <AppendTargetFrameworkToOutputPath>False</AppendTargetFrameworkToOutputPath>
+        <AppendRuntimeIdentifierToOutputPath>False</AppendRuntimeIdentifierToOutputPath>
+    </PropertyGroup>
+
+
+</Project>

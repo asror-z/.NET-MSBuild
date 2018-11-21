@@ -1,0 +1,10 @@
+﻿<Project>
+
+    <Import Project="ZCore.xml" />
+
+    <!--        Runtimes    -->
+    <PropertyGroup>
+        <TargetFrameworks>net472</TargetFrameworks>
+    </PropertyGroup>
+    
+</Project>
